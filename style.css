@@ -1,89 +1,85 @@
+html {
+    height: 100%;
+}
+
 body {
     background-image: url('images/bg-intro-desktop.png');
     background-size: cover;
     background-color: hsl(0, 100%, 74%);
     font-family: "Popins", sans-serif;
+    height: fit-content;
+    min-height: 100%;
+    
 }
 
 .flex-container {
     display: flex;
     flex-direction: row;
+    border: 1px solid orange;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    /* border: 2px solid white; */
-    height: 90vh;
+    width: 100%;
+    height: 100vh;
 }
 
 .flex-left {
-    color: white;
-    min-width: 40%;
-    min-height: 60%;
-    margin-left: 10%;
-    align-self: center;
-    /* border: 2px solid white;   */
-}
-
-#headline, #first-p-left {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    border: 1px solid white;
+    width: 40%;
 }
 
 #headline {
     font-size: 250%;
-    margin-top: 15%;
+    color: white;
 }
-
-
-
+ 
 #first-p-left {
-    font-size: 75%;
+    font-size: 100%;
+    line-height: 140%;
+    color: white;
+    opacity: 0.8;
 }
 
 
 
 .flex-right {
-   min-width: 40%;
-   min-height: 70%;
-   margin-left: 3%;
-   align-self: center;
+    width: 40%;
+    border: 1px solid white;
+
+   
 }
 
 .purple-rectangle {
-    width: 98%;
-    height: 50%;
     background-color: hsl(248, 32%, 49%);
-    padding: 2%;
     margin-bottom: 3%;
+    border-radius: 10px;
+    box-shadow: 0px 7px rgba(0, 0, 0, 10%);
 }
 
 .form-headline {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-content: center;
 }
 
 #free {
-   
     color: white;
 }
 
 #there {
-   
-    color: white;
+    color: hsl(246, 25%, 77%);
 
 }
 
 .white-rectangle {
     background-color: white;
     border-radius: 5px;
-    min-width: 100%;
-    min-height: 100%;
-    padding-top: 5%;
-    box-shadow: 0px 7px rgba(0, 0, 0, 20%);
+    padding: 5%;
+    box-shadow: 0px 7px rgba(0, 0, 0, 10%);
 
 }
 
-.form-headline, .text-fields, .form-footer {
+.text-fields {
    text-align: center;
 }
 
@@ -97,7 +93,33 @@ input {
 
 
 #trial-button {
+    color: white;
     margin: 0 auto;
+    border: none;
     display: block;
     width: 93%;
+    background-color: hsl(154, 59%, 51%);
+    padding: 3%;
+    box-shadow: 0.5px 4px hsla(154, 48%, 34%, 0.76);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#trial-button:hover {
+    background-color: hsl(154, 77%, 72%);
+}
+
+.form-footer {
+    margin: 5%;
+    font-size: 60%;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+}
+
+#terms {
+    color: hsl(0, 100%, 74%);
+}
+
+p {
+    display: inline;
 }
