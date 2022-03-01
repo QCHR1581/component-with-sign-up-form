@@ -14,30 +14,41 @@ body {
 
 .flex-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border: 1px solid orange;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
+    min-width: 100%;
     height: 100vh;
 }
+
+
+@media screen and (max-width: 300px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
 
 .flex-left {
     border: 1px solid white;
     width: 40%;
+    height: 35%;
 }
 
 #headline {
-    font-size: 250%;
+    font-size: 300%;
     color: white;
+    margin-left: 20%;
+    
 }
  
-#first-p-left {
+.first-p-left {
     font-size: 100%;
     line-height: 140%;
     color: white;
     opacity: 0.8;
+    margin-left: 20%;
 }
 
 
